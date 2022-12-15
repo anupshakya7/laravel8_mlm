@@ -11,7 +11,6 @@ class Generation extends Model
     protected $fillable = [
         'main_id',
         'member_id',
-        'gen_type',
-        'status'
+        'gen_type'
     ];
 }

@@ -19,4 +19,7 @@ use App\Http\Controllers\User\HomeController;
 
 Route::get('/',[HomeController::class,"index"])->name('user.home');
 Route::get('/login',[LoginController::class,"index"])->name('user.login');
+Route::post('/login',[LoginController::class,"loginProcess"])->name('user.login.process');
 Route::get('/register',[RegisterController::class,"index"])->name('user.register');
+Route::post('/search-sponsor',[RegisterController::class,"search_sponsorid"])->name('search.sponsorid');
+Route::post('/store',[RegisterController::class,"store"])->name('user.store');
